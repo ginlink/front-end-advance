@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "isolatedModules": true,
+    "target": "ES5",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    // "declaration": true,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "strict": true,
+  },
+  "include": [
+    "**/*.ts",
+    "src/**/*.ts",
+  ],
+}

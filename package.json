@@ -1,0 +1,17 @@
+{
+  "name": "front-end-advance",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "git@github.com:ginlink/front-end-advance.git",
+  "author": "蒋金 <ginlink@163.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "./src/main.ts",
+  "scripts": {
+    "test": "ts-node ./src/main.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}

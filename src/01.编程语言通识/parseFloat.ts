@@ -6,7 +6,7 @@
  * @param x
  * @returns
  */
-function myParseFloat(origin: string | undefined, x = 10) {
+export function myParseFloat(origin: string | undefined, x = 10) {
   if (!origin) return
 
   // num
