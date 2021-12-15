@@ -1,17 +1,32 @@
-// function runFsm() {
-export function runFsm() {
-  const str = '1ab23'
+/**
+ * only can handle whether str include 'ab'
+ * @param str
+ * @returns
+ */
+export function runFsmWithAb(str?: string) {
+  if (!str) return false
 
   let i = 0,
-    res: boolean = false
+    res: string = ''
   const len = str.length
   while (true) {
     if (i >= len) break
 
-    console.log('[]111111:')
     const char = str[i]
     if (char == 'a') {
-      return (res = true)
+      res += char
+    }
+
+    if (char == 'b') {
+      res += char
+    }
+
+    if (res == 'abc') {
+      return true
+    }
+
+    if (char != 'a' && char != 'b') {
+      res = ''
     }
 
     ++i

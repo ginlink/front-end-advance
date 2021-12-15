@@ -1,4 +1,24 @@
-import { runFsm } from './03.有限状态机/parse-ab'
+import { HttpClient } from './03.实现http协议/clent'
+import { parseHttpResponse } from './03.有限状态机'
+import { runFsmWithAb } from './03.有限状态机/parse-ab'
 
-// 状态机
-runFsm()
+// adjust whether include 'ab'
+// console.log('[](runFsm):', runFsmWithAb('12a3bc'))
+
+// implement a http client
+// const client = new HttpClient()
+// client.test()
+const client = HttpClient.createHttp({
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded',
+  },
+  body: 'I am a tiny msg!',
+})
+
+client.send().then((res) => {
+  // console.log('[](res):', res)
+})
+
+// parse http status
+// const httpResponse = ''
+// console.log('[]（parseHttpResponse:', parseHttpResponse())
